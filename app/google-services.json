@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "422764553555",
+    "project_id": "jokerapp-7bf5d",
+    "storage_bucket": "jokerapp-7bf5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422764553555:android:60771d838978552b0d6da6",
+        "android_client_info": {
+          "package_name": "com.example.jokerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422764553555-5b95r5e8a0g4fhojfv0svij9kc4mfpdm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrkoxrhteapG1GjwGMhcAopgI0f30sHho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422764553555-5b95r5e8a0g4fhojfv0svij9kc4mfpdm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

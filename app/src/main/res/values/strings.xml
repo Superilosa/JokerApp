@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">JokerApp</string>
+    <string name="moshla">მოშლა</string>
+    <string name="gaormageba">გაორმაგება</string>
+    <string name="player1">პირველი მოთამაშე</string>
+    <string name="player2">მეორე მოთამაშე</string>
+    <string name="player3">მესამე მოთამაშე</string>
+    <string name="player4">მეოთხე მოთამაშე</string>
+    <string name="xishti_input">ხიშტი (500/200/...)</string>
+    <string name="premiaze">პრემიაზე:</string>
+    <string name="begin">დაწყება</string>
+    <string name="xishti">-</string>
+    <string name="b1">1</string>
+    <string name="b2">2</string>
+    <string name="b3">3</string>
+    <string name="b4">4</string>
+    <string name="b5">5</string>
+    <string name="b6">6</string>
+    <string name="b7">7</string>
+    <string name="b8">8</string>
+    <string name="b9">9</string>
+    <string name="p">P</string>
+    <string name="j">J</string>
+    <string name="returnButton">დაბრუნება</string>
+    <string name="resultsButton">შედეგები</string>
+    <string name="log_in">გაიარეთ ავტორიზაცია</string>
+    <string name="email">იმეილი</string>
+    <string name="password">პაროლი</string>
+    <string name="loginButton">შესვლა</string>
+    <string name="or">ან</string>
+    <string name="register">დარეგისტრირდით</string>
+    <string name="registerButton">დარეგისტრირება</string>
+</resources>

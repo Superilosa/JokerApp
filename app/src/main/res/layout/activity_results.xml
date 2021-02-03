@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultsActivity"
+    android:background="@mipmap/orange_background"
+    android:padding="25dp">
+
+    <TableLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/returnButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultsTable">
+
+        <TableRow>
+            <TextView
+                android:layout_height="70dp"
+                android:width="0dp"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:id="@+id/name1"
+                android:textColor="@color/button_blue" />
+            <TextView
+                android:layout_height="70dp"
+                android:width="0dp"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:id="@+id/name2"
+                android:textColor="@color/button_blue" />
+            <TextView
+                android:layout_height="70dp"
+                android:width="0dp"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:id="@+id/name3"
+                android:textColor="@color/button_blue" />
+            <TextView
+                android:layout_height="70dp"
+                android:width="0dp"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:id="@+id/name4"
+                android:textColor="@color/button_blue" />
+        </TableRow>
+
+        <TextView
+            android:background="@color/button_blue"
+            android:height="1dp"/>
+
+        <TableRow>
+            <TextView
+                android:layout_height="70dp"
+                android:width="0dp"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:id="@+id/result1"/>
+            <TextView
+                android:layout_height="70dp"
+                android:width="0dp"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:id="@+id/result2"/>
+            <TextView
+                android:layout_height="70dp"
+                android:width="0dp"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:id="@+id/result3"/>
+            <TextView
+                android:layout_height="70dp"
+                android:width="0dp"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:id="@+id/result4"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/resultsTable"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/button_blue"
+        android:id="@+id/returnButton"
+        android:text="@string/returnButton"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
