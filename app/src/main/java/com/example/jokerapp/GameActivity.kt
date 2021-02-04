@@ -11,6 +11,8 @@ import androidx.core.view.isVisible
 import kotlinx.android.synthetic.main.activity_game.*
 import kotlinx.android.synthetic.main.activity_main.*
 import org.w3c.dom.Text
+import kotlin.math.round
+
 
 class GameActivity : AppCompatActivity() {
 
@@ -439,10 +441,10 @@ class GameActivity : AppCompatActivity() {
                 premiebi(prem1p1, prem1p2, prem1p3, prem1p4, player1P, player2P, player3P, player4P, player1M, player2M, player3M, player4M)
             }
             ///////////გამოთვლა////////////////////////////////////////////////////////////
-            j1p1.text = ((r1p1w.text.toString().toFloat() + r2p1w.text.toString().toFloat() + r3p1w.text.toString().toFloat() + r4p1w.text.toString().toFloat() + r5p1w.text.toString().toFloat() + r6p1w.text.toString().toFloat() + r7p1w.text.toString().toFloat() + r8p1w.text.toString().toFloat() + prem1p1.text.toString().toFloat()) / 100.0).toString()
-            j1p2.text = ((r1p2w.text.toString().toFloat() + r2p2w.text.toString().toFloat() + r3p2w.text.toString().toFloat() + r4p2w.text.toString().toFloat() + r5p2w.text.toString().toFloat() + r6p2w.text.toString().toFloat() + r7p2w.text.toString().toFloat() + r8p2w.text.toString().toFloat() + prem1p2.text.toString().toFloat()) / 100.0).toString()
-            j1p3.text = ((r1p3w.text.toString().toFloat() + r2p3w.text.toString().toFloat() + r3p3w.text.toString().toFloat() + r4p3w.text.toString().toFloat() + r5p3w.text.toString().toFloat() + r6p3w.text.toString().toFloat() + r7p3w.text.toString().toFloat() + r8p3w.text.toString().toFloat() + prem1p3.text.toString().toFloat()) / 100.0).toString()
-            j1p4.text = ((r1p4w.text.toString().toFloat() + r2p4w.text.toString().toFloat() + r3p4w.text.toString().toFloat() + r4p4w.text.toString().toFloat() + r5p4w.text.toString().toFloat() + r6p4w.text.toString().toFloat() + r7p4w.text.toString().toFloat() + r8p4w.text.toString().toFloat() + prem1p4.text.toString().toFloat()) / 100.0).toString()
+            j1p1.text = (round((r1p1w.text.toString().toFloat() + r2p1w.text.toString().toFloat() + r3p1w.text.toString().toFloat() + r4p1w.text.toString().toFloat() + r5p1w.text.toString().toFloat() + r6p1w.text.toString().toFloat() + r7p1w.text.toString().toFloat() + r8p1w.text.toString().toFloat() + prem1p1.text.toString().toFloat()) / 10.0)/10.0).toString()
+            j1p2.text = (round((r1p2w.text.toString().toFloat() + r2p2w.text.toString().toFloat() + r3p2w.text.toString().toFloat() + r4p2w.text.toString().toFloat() + r5p2w.text.toString().toFloat() + r6p2w.text.toString().toFloat() + r7p2w.text.toString().toFloat() + r8p2w.text.toString().toFloat() + prem1p2.text.toString().toFloat()) / 10.0)/10.0).toString()
+            j1p3.text = (round((r1p3w.text.toString().toFloat() + r2p3w.text.toString().toFloat() + r3p3w.text.toString().toFloat() + r4p3w.text.toString().toFloat() + r5p3w.text.toString().toFloat() + r6p3w.text.toString().toFloat() + r7p3w.text.toString().toFloat() + r8p3w.text.toString().toFloat() + prem1p3.text.toString().toFloat()) / 10.0)/10.0).toString()
+            j1p4.text = (round((r1p4w.text.toString().toFloat() + r2p4w.text.toString().toFloat() + r3p4w.text.toString().toFloat() + r4p4w.text.toString().toFloat() + r5p4w.text.toString().toFloat() + r6p4w.text.toString().toFloat() + r7p4w.text.toString().toFloat() + r8p4w.text.toString().toFloat() + prem1p4.text.toString().toFloat()) / 10.0)/10.0).toString()
         } else if (pulka == 2) {
             //მეორე პულკა///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             // პრემიები//////////////////////////////////
@@ -471,14 +473,14 @@ class GameActivity : AppCompatActivity() {
                 premiebi(prem2p1, prem2p2, prem2p3, prem2p4, player1P, player2P, player3P, player4P, player1M, player2M, player3M, player4M)
             }
             //გამოთვლა///////////////////////////////////////////////////////////
-            t2p1.text = ((r9p1w.text.toString().toFloat() + r10p1w.text.toString().toFloat() + r11p1w.text.toString().toFloat() + r12p1w.text.toString().toFloat() + prem2p1.text.toString().toFloat()) / 100.0).toString()
-            t2p2.text = ((r9p2w.text.toString().toFloat() + r10p2w.text.toString().toFloat() + r11p2w.text.toString().toFloat() + r12p2w.text.toString().toFloat() + prem2p2.text.toString().toFloat()) / 100.0).toString()
-            t2p3.text = ((r9p3w.text.toString().toFloat() + r10p3w.text.toString().toFloat() + r11p3w.text.toString().toFloat() + r12p3w.text.toString().toFloat() + prem2p3.text.toString().toFloat()) / 100.0).toString()
-            t2p4.text = ((r9p4w.text.toString().toFloat() + r10p4w.text.toString().toFloat() + r11p4w.text.toString().toFloat() + r12p4w.text.toString().toFloat() + prem2p4.text.toString().toFloat()) / 100.0).toString()
-            j2p1.text = (t2p1.text.toString().toFloat() + j1p1.text.toString().toFloat()).toString()
-            j2p2.text = (t2p2.text.toString().toFloat() + j1p2.text.toString().toFloat()).toString()
-            j2p3.text = (t2p3.text.toString().toFloat() + j1p3.text.toString().toFloat()).toString()
-            j2p4.text = (t2p4.text.toString().toFloat() + j1p4.text.toString().toFloat()).toString()
+            t2p1.text = (round((r9p1w.text.toString().toFloat() + r10p1w.text.toString().toFloat() + r11p1w.text.toString().toFloat() + r12p1w.text.toString().toFloat() + prem2p1.text.toString().toFloat()) / 10.0)/10.0).toString()
+            t2p2.text = (round((r9p2w.text.toString().toFloat() + r10p2w.text.toString().toFloat() + r11p2w.text.toString().toFloat() + r12p2w.text.toString().toFloat() + prem2p2.text.toString().toFloat()) / 10.0)/10.0).toString()
+            t2p3.text = (round((r9p3w.text.toString().toFloat() + r10p3w.text.toString().toFloat() + r11p3w.text.toString().toFloat() + r12p3w.text.toString().toFloat() + prem2p3.text.toString().toFloat()) / 10.0)/10.0).toString()
+            t2p4.text = (round((r9p4w.text.toString().toFloat() + r10p4w.text.toString().toFloat() + r11p4w.text.toString().toFloat() + r12p4w.text.toString().toFloat() + prem2p4.text.toString().toFloat()) / 10.0)/10.0).toString()
+            j2p1.text = (round((t2p1.text.toString().toFloat() + j1p1.text.toString().toFloat())*10)/10).toString()
+            j2p2.text = (round((t2p2.text.toString().toFloat() + j1p2.text.toString().toFloat())*10)/10).toString()
+            j2p3.text = (round((t2p3.text.toString().toFloat() + j1p3.text.toString().toFloat())*10)/10).toString()
+            j2p4.text = (round((t2p4.text.toString().toFloat() + j1p4.text.toString().toFloat())*10)/10).toString()
         }else if (pulka == 3) {
             //მესამე პულკა//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             //პრემიები////////////////////////////////
@@ -507,14 +509,14 @@ class GameActivity : AppCompatActivity() {
                 premiebi(prem3p1, prem3p2, prem3p3, prem3p4, player1P, player2P, player3P, player4P, player1M, player2M, player3M, player4M)
             }
             //გამოთვლა////////////////////////////////////////////////////
-            t3p1.text = ((r13p1w.text.toString().toFloat() + r14p1w.text.toString().toFloat() + r15p1w.text.toString().toFloat() + r16p1w.text.toString().toFloat() + r17p1w.text.toString().toFloat() + r18p1w.text.toString().toFloat() + r19p1w.text.toString().toFloat() + r20p1w.text.toString().toFloat() + prem3p1.text.toString().toFloat())/100.0).toString()
-            t3p2.text = ((r13p2w.text.toString().toFloat() + r14p2w.text.toString().toFloat() + r15p2w.text.toString().toFloat() + r16p2w.text.toString().toFloat() + r17p2w.text.toString().toFloat() + r18p2w.text.toString().toFloat() + r19p2w.text.toString().toFloat() + r20p2w.text.toString().toFloat() + prem3p2.text.toString().toFloat())/100.0).toString()
-            t3p3.text = ((r13p3w.text.toString().toFloat() + r14p3w.text.toString().toFloat() + r15p3w.text.toString().toFloat() + r16p3w.text.toString().toFloat() + r17p3w.text.toString().toFloat() + r18p3w.text.toString().toFloat() + r19p3w.text.toString().toFloat() + r20p3w.text.toString().toFloat() + prem3p3.text.toString().toFloat())/100.0).toString()
-            t3p4.text = ((r13p4w.text.toString().toFloat() + r14p4w.text.toString().toFloat() + r15p4w.text.toString().toFloat() + r16p4w.text.toString().toFloat() + r17p4w.text.toString().toFloat() + r18p4w.text.toString().toFloat() + r19p4w.text.toString().toFloat() + r20p4w.text.toString().toFloat() + prem3p4.text.toString().toFloat())/100.0).toString()
-            j3p1.text = (t3p1.text.toString().toFloat() + j2p1.text.toString().toFloat()).toString()
-            j3p2.text = (t3p2.text.toString().toFloat() + j2p2.text.toString().toFloat()).toString()
-            j3p3.text = (t3p3.text.toString().toFloat() + j2p3.text.toString().toFloat()).toString()
-            j3p4.text = (t3p4.text.toString().toFloat() + j2p4.text.toString().toFloat()).toString()
+            t3p1.text = (round((r13p1w.text.toString().toFloat() + r14p1w.text.toString().toFloat() + r15p1w.text.toString().toFloat() + r16p1w.text.toString().toFloat() + r17p1w.text.toString().toFloat() + r18p1w.text.toString().toFloat() + r19p1w.text.toString().toFloat() + r20p1w.text.toString().toFloat() + prem3p1.text.toString().toFloat())/10.0)/10.0).toString()
+            t3p2.text = (round((r13p2w.text.toString().toFloat() + r14p2w.text.toString().toFloat() + r15p2w.text.toString().toFloat() + r16p2w.text.toString().toFloat() + r17p2w.text.toString().toFloat() + r18p2w.text.toString().toFloat() + r19p2w.text.toString().toFloat() + r20p2w.text.toString().toFloat() + prem3p2.text.toString().toFloat())/10.0)/10.0).toString()
+            t3p3.text = (round((r13p3w.text.toString().toFloat() + r14p3w.text.toString().toFloat() + r15p3w.text.toString().toFloat() + r16p3w.text.toString().toFloat() + r17p3w.text.toString().toFloat() + r18p3w.text.toString().toFloat() + r19p3w.text.toString().toFloat() + r20p3w.text.toString().toFloat() + prem3p3.text.toString().toFloat())/10.0)/10.0).toString()
+            t3p4.text = (round((r13p4w.text.toString().toFloat() + r14p4w.text.toString().toFloat() + r15p4w.text.toString().toFloat() + r16p4w.text.toString().toFloat() + r17p4w.text.toString().toFloat() + r18p4w.text.toString().toFloat() + r19p4w.text.toString().toFloat() + r20p4w.text.toString().toFloat() + prem3p4.text.toString().toFloat())/10.0)/10.0).toString()
+            j3p1.text = (round((t3p1.text.toString().toFloat() + j2p1.text.toString().toFloat())*10)/10).toString()
+            j3p2.text = (round((t3p2.text.toString().toFloat() + j2p2.text.toString().toFloat())*10)/10).toString()
+            j3p3.text = (round((t3p3.text.toString().toFloat() + j2p3.text.toString().toFloat())*10)/10).toString()
+            j3p4.text = (round((t3p4.text.toString().toFloat() + j2p4.text.toString().toFloat())*10)/10).toString()
         }else if (pulka == 4){
             //მეოთხე პულკა/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             //პრემიები////////////////////////////
@@ -543,14 +545,14 @@ class GameActivity : AppCompatActivity() {
                 premiebi(prem4p1, prem4p2, prem4p3, prem4p4, player1P, player2P, player3P, player4P, player1M, player2M, player3M, player4M)
             }
             //გამოთვლა////////////////////////////////////////////////////
-            t4p1.text = ((r21p1w.text.toString().toFloat() + r22p1w.text.toString().toFloat() + r23p1w.text.toString().toFloat() + r24p1w.text.toString().toInt() + prem4p1.text.toString().toFloat())/100.0).toString()
-            t4p2.text = ((r21p2w.text.toString().toFloat() + r22p2w.text.toString().toFloat() + r23p2w.text.toString().toFloat() + r24p2w.text.toString().toInt() + prem4p2.text.toString().toFloat())/100.0).toString()
-            t4p3.text = ((r21p3w.text.toString().toFloat() + r22p3w.text.toString().toFloat() + r23p3w.text.toString().toFloat() + r24p3w.text.toString().toInt() + prem4p3.text.toString().toFloat())/100.0).toString()
-            t4p4.text = ((r21p4w.text.toString().toFloat() + r22p4w.text.toString().toFloat() + r23p4w.text.toString().toFloat() + r24p4w.text.toString().toInt() + prem4p4.text.toString().toFloat())/100.0).toString()
-            j4p1.text = (t4p1.text.toString().toFloat() + j3p1.text.toString().toFloat()).toString()
-            j4p2.text = (t4p2.text.toString().toFloat() + j3p2.text.toString().toFloat()).toString()
-            j4p3.text = (t4p3.text.toString().toFloat() + j3p3.text.toString().toFloat()).toString()
-            j4p4.text = (t4p4.text.toString().toFloat() + j3p4.text.toString().toFloat()).toString()
+            t4p1.text = (round((r21p1w.text.toString().toFloat() + r22p1w.text.toString().toFloat() + r23p1w.text.toString().toFloat() + r24p1w.text.toString().toInt() + prem4p1.text.toString().toFloat())/10.0)/10.0).toString()
+            t4p2.text = (round((r21p2w.text.toString().toFloat() + r22p2w.text.toString().toFloat() + r23p2w.text.toString().toFloat() + r24p2w.text.toString().toInt() + prem4p2.text.toString().toFloat())/10.0)/10.0).toString()
+            t4p3.text = (round((r21p3w.text.toString().toFloat() + r22p3w.text.toString().toFloat() + r23p3w.text.toString().toFloat() + r24p3w.text.toString().toInt() + prem4p3.text.toString().toFloat())/10.0)/10.0).toString()
+            t4p4.text = (round((r21p4w.text.toString().toFloat() + r22p4w.text.toString().toFloat() + r23p4w.text.toString().toFloat() + r24p4w.text.toString().toInt() + prem4p4.text.toString().toFloat())/10.0)/10.0).toString()
+            j4p1.text = (round((t4p1.text.toString().toFloat() + j3p1.text.toString().toFloat())*10)/10).toString()
+            j4p2.text = (round((t4p2.text.toString().toFloat() + j3p2.text.toString().toFloat())*10)/10).toString()
+            j4p3.text = (round((t4p3.text.toString().toFloat() + j3p3.text.toString().toFloat())*10)/10).toString()
+            j4p4.text = (round((t4p4.text.toString().toFloat() + j3p4.text.toString().toFloat())*10)/10).toString()
         }
 
     }
